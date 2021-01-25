@@ -1,6 +1,6 @@
 const assert = require('assert');
 const sinon = require('sinon');
-const { BotActivityHandler, mentionActivityAsync } = require('../botActivityHandler');
+const { BotActivityHandler, mentionActivityAsync } = require('../botActivityHandler.ts');
 
 describe('Test Simple Mention Of User', () => {
     it('Should call sendActivity', () => {
@@ -16,7 +16,7 @@ describe('Test Simple Mention Of User', () => {
     });
 });
 
-const getContextWithName = name => {
+const getContextWithName = (name) => {
     return {
         activity: {
             from: {
@@ -29,7 +29,7 @@ const getContextWithName = name => {
     }
 }
 
-const getExpectedResponseWithName = name => {
+const getExpectedResponseWithName = (name) => {
     return {
         type: 'message',
         text: `Hi <at>${name}</at>`,

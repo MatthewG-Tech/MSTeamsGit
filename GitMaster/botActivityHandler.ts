@@ -55,6 +55,7 @@ class BotActivityHandler extends TeamsActivityHandler {
      * Say hello and @ mention the current user.
      */
     static async mentionActivityAsync(context) {
+        console.log(typeof context)
         const TextEncoder = require('html-entities').XmlEntities;
 
         const mention = {
