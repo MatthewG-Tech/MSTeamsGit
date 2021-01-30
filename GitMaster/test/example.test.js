@@ -1,6 +1,6 @@
 const assert = require('assert');
 const sinon = require('sinon');
-const { BotActivityHandler, mentionActivityAsync } = require('../botActivityHandler.ts');
+const { BotActivityHandler, mentionActivityAsync } = require('../botActivityHandler.js');
 
 describe('Test Simple Mention Of User', () => {
     it('Should call sendActivity', () => {
