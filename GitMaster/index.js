@@ -49,7 +49,7 @@ const botActivityHandler = new BotActivityHandler();
 
 // Create HTTP server.
 const server = express();
-const port: String = process.env.port || process.env.PORT || '3978';
+const port = process.env.port || process.env.PORT || '3978';
 server.listen(port, () => 
     console.log(`\Bot/ME service listening at http://localhost:${port}`)
 );

@@ -9,9 +9,9 @@
     "license": "MIT",
     "main": "index.js",
     "scripts": {
-        "start": "ts-node ./GitMaster/index.ts",
-        "watch": "nodemon ./GitMaster/index.ts",
-        "test": "mocha GitMaster/test/*.ts"
+        "start": "node ./GitMaster/index.tj",
+        "watch": "nodemon ./GitMaster/index.js",
+        "test": "mocha GitMaster/test/*.js"
     },
     "dependencies": {
         "@octokit/rest": "^18.0.14",
