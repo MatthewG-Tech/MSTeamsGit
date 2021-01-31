@@ -11,7 +11,7 @@
     "scripts": {
         "start": "node ./GitMaster/index.tj",
         "watch": "nodemon ./GitMaster/index.js",
-        "test": "mocha GitMaster/test/*.js"
+        "test": "mocha $(find ./GitMaster/test -name '*.js')"
     },
     "dependencies": {
         "@octokit/rest": "^18.0.14",
